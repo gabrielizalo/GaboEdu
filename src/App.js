@@ -1,16 +1,25 @@
 import React from 'react';
 import './styles/styles.scss';
+import Card from './components/Card';
 
 const App = () => (
     <>
-        <div className="hello">
-            <h1>Hola mundo</h1>
-            <p>Hola, saludando desde mi componente</p>
+        <div className="main-banner img-container l-section" id="main-banner">
+            <div className="ed-grid lg-grid-6">
+                <div className="lg-cols-4 lg-x-2">
+                    <img className="main-banner__img" alt="City" src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?ixlib=rb-1.2.1&w=1000&q=80" />
+                        <div className="main-banner__data s-center">
+                            <p className="t2 s-mb-0">Título del banner</p>
+                            <p> Subtítulo del banner</p>
+                            <a href="https://ed.team/" className="button">Botón del banner</a>
+                        </div>
+                </div>
+            </div>
         </div>
-        <div>
-            <h2>Hola mundo son un H2</h2>
-            <p>Hola, saludando desde mi componente, yo soy h2</p>
-            <img src="https://ed.team/static/images/logo-premium.svg" alt=""/>
+        <div className="ed-grid m-grid-3">
+            <Card />
+            <Card />
+            <Card />
         </div>
     </>
 );
