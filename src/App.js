@@ -17,9 +17,18 @@ const App = () => (
             </div>
         </div>
         <div className="ed-grid m-grid-3">
-            <Card />
-            <Card />
-            <Card />
+            <Card
+              title="Desarrollo frontend con React.js"
+              image="https://drupal.ed.team/sites/default/files/imagenes-cdn-edteam/2019-04/React%20desarrollo%20frotend.png"
+              price="USD 50"
+              profesor="Beto Quiroga"
+            />
+            <Card
+              title="GIT desde cero 2020"
+              image="https://drupal.ed.team/sites/default/files/styles/16_9_medium/public/imagenes-cdn-edteam/2019-11/git-desde-cero-1.png"
+              price="Gratis"
+              profesor="Alvaro Felipe"
+            />
         </div>
     </>
 );
