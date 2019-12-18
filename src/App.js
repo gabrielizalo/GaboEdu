@@ -2,6 +2,27 @@ import React from 'react';
 import './styles/styles.scss';
 import Card from './components/Card';
 
+const cursos = [
+  {
+    "title": "Programación orientada a objetos con JavaScript",
+    "image": "https://drupal.ed.team/sites/default/files/styles/16_9_medium/public/imagenes-cdn-edteam/2019-11/js-poo.png",
+    "profesor": "Beto Quiroga",
+    "price": "COP 53.000"
+  },
+  {
+    "title": "Business Intelligence",
+    "image": "https://res.cloudinary.com/edteam/image/upload/w_400/v1573259688/courses/bi-poster.png",
+    "profesor": "Hazbleydi Verástegui",
+    "price": "COP 70.000"
+  },
+  {
+    "title": "Node.js desde cero",
+    "image": "https://res.cloudinary.com/edteam/image/upload/w_400/v1573257385/courses/nodejs.png",
+    "profesor": "Camilo Montoya",
+    "price": "COP 158.000"
+  }
+];
+
 const App = () => (
     <>
         <div className="main-banner img-container l-section" id="main-banner">
@@ -17,19 +38,9 @@ const App = () => (
             </div>
         </div>
         <div className="ed-grid m-grid-3">
-            <Card
-              title="Desarrollo frontend con React.js"
-              image="https://drupal.ed.team/sites/default/files/imagenes-cdn-edteam/2019-04/React%20desarrollo%20frotend.png"
-              price="USD 50"
-              profesor="Beto Quiroga"
-            />
-            <Card />
-            <Card
-              title="GIT desde cero 2020"
-              image="https://drupal.ed.team/sites/default/files/styles/16_9_medium/public/imagenes-cdn-edteam/2019-11/git-desde-cero-1.png"
-              price="Gratis"
-              profesor="Alvaro Felipe"
-            />
+            {
+              cursos.map( curso => <Card title={curso.title} image={curso.image} price={curso.price} profesor={curso.profesor} />)
+            }
         </div>
     </>
 );
