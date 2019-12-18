@@ -23,6 +23,7 @@ const App = () => (
               price="USD 50"
               profesor="Beto Quiroga"
             />
+            <Card />
             <Card
               title="GIT desde cero 2020"
               image="https://drupal.ed.team/sites/default/files/styles/16_9_medium/public/imagenes-cdn-edteam/2019-11/git-desde-cero-1.png"

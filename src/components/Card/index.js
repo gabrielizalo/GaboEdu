@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types"
 
 const Card = ({title, image, price, profesor}) => (
   <article className="card" id={title}>
@@ -16,5 +17,19 @@ const Card = ({title, image, price, profesor}) => (
     </div>
   </article>
 );
+
+Card.propTypes = {
+  title: PropTypes.string,
+  image: PropTypes.string,
+  price: PropTypes.string,
+  profesor: PropTypes.string
+};
+
+Card.defaultProps = {
+  title: "Curso Sin Título",
+  image: "https://increasify.com.au/wp-content/uploads/2016/08/default-image.png",
+  price: "--",
+  profesor: "Sin info"
+};
 
 export default Card;
