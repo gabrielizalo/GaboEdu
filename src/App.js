@@ -6,7 +6,7 @@ import "./styles/styles.scss";
 const App = () => (
     <>
         <Banner />
-        <Form />
+        <Form name={"EDTeam"} />
     </>
 );
 

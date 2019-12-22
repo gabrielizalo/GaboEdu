@@ -9,11 +9,16 @@ class Form extends Component {
         };
     }
 
+    componentDidMount() {
+        let elemento = document.getElementById("elemento");
+        console.log(elemento);
+    }
+
     render() {
         return (
             <div className="ed-grid">
-                <h1>Formulario</h1>
-                <form action="">
+                <h1>Formulario {this.props.name}</h1>
+                <form action="" id="elemento">
                     <div className="ed-grid m-grid-2">
                         <div className="form__item">
                             <label htmlFor="">Nombre completo</label>
