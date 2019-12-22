@@ -24,6 +24,12 @@ class Form extends Component {
         console.log(elemento);
     }
 
+    componentDidUpdate(prevProps, prevState) {
+        console.log(prevProps);
+        console.log(prevState);
+        console.log("-------------------");
+    }
+
     render() {
         return (
             <div className="ed-grid">
