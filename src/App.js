@@ -2,8 +2,9 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Banner from "./components/Banner";
-import Form from "./components/Form";
+import Course from "./components/Course";
 import CourseGrid from "./components/CourseGrid";
+import Form from "./components/Form";
 
 import "./styles/styles.scss";
 
@@ -12,6 +13,7 @@ const App = () => (
         <Switch>
             <Route path="/" exact component={Banner} />
             <Route path="/cursos" exact component={CourseGrid} />
+            <Route path="/cursos/:id" exact component={Course} />
             <Route
                 path="/contacto"
                 exact
