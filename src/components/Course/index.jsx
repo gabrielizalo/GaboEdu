@@ -1,5 +1,6 @@
 import React from "react";
 import { cursos } from "../../const";
+import { Link } from "react-router-dom";
 
 const Course = props => {
     const { match } = props;
@@ -20,6 +21,8 @@ const Course = props => {
                     />
                     <p className="m-cols-2">
                         {infoCurso.price} - Prof. {infoCurso.profesor}
+                        <br />
+                        <Link to="/cursos/">Volver al Listado de Cursos</Link>
                     </p>
                 </>
             ) : (
