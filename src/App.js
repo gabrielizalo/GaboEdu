@@ -5,11 +5,13 @@ import Banner from "./components/Banner";
 import Course from "./components/Course";
 import CourseGrid from "./components/CourseGrid";
 import Form from "./components/Form";
+import MainMenu from "./components/MainMenu";
 
 import "./styles/styles.scss";
 
 const App = () => (
     <Router>
+        <MainMenu />
         <Switch>
             <Route path="/" exact component={Banner} />
             <Route path="/cursos" exact component={CourseGrid} />
