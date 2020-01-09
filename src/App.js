@@ -5,6 +5,7 @@ import Banner from "./components/Banner";
 import Course from "./components/Course";
 import CourseGrid from "./components/CourseGrid";
 import Form from "./components/Form";
+import History from "./components/History";
 import MainMenu from "./components/MainMenu";
 
 import "./styles/styles.scss";
@@ -16,6 +17,8 @@ const App = () => (
             <Route path="/" exact component={Banner} />
             <Route path="/cursos" exact component={CourseGrid} />
             <Route path="/cursos/:id" exact component={Course} />
+            <Route path="/historial"  exact component={History} />
+            <Route path="/historial/:id" exact component={History} />
             <Route
                 path="/contacto"
                 exact

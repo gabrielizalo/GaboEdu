@@ -27,6 +27,16 @@ const MainMenu = () => (
                             </NavLink>
                         </li>
                         <li>
+                            <NavLink to="/historial/" activeClassName="activo">
+                                Historial 1
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/historial/algo" activeClassName="activo">
+                                Historial 2
+                            </NavLink>
+                        </li>
+                        <li>
                             <NavLink to="/contacto/" activeClassName="activo">
                                 Contacto
                             </NavLink>
